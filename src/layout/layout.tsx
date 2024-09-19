@@ -48,31 +48,51 @@ export default function PageLayout({
         <ArrowIcon />
       </button>
       <nav className="page-layout__nav">
-        <div className="page-layout__nav__links">
+        <div
+          className={`${
+            step == 0 ? "active-link" : ""
+          } page-layout__nav__links`}
+        >
           <Link href="/">
             <HomeIcon />
           </Link>
           <span>home</span>
         </div>
-        <div className="page-layout__nav__links">
+        <div
+          className={`${
+            step == 1 ? "active-link" : ""
+          } page-layout__nav__links`}
+        >
           <Link href="/mental-health-facts">
             <TypesIcon />
           </Link>
           <span>facts</span>
         </div>
-        <div className="page-layout__nav__links">
+        <div
+          className={`${
+            step == 2 ? "active-link" : ""
+          } page-layout__nav__links`}
+        >
           <Link href="/mental-health-types">
             <TypesIcon />
           </Link>
           <span>types</span>
         </div>
-        <div className="page-layout__nav__links">
+        <div
+          className={`${
+            step == 3 ? "active-link" : ""
+          } page-layout__nav__links`}
+        >
           <Link href="/need-help">
             <HelpIcon />
           </Link>
           <span>help</span>
         </div>
-        <div className="page-layout__nav__links">
+        <div
+          className={`${
+            step == 4 ? "active-link" : ""
+          } page-layout__nav__links`}
+        >
           <Link href="/how-to-help">
             <HowToHelpIcon />
           </Link>

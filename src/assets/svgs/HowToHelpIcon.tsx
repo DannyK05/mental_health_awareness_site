@@ -1,6 +1,7 @@
 export default function HowToHelpIcon() {
   return (
     <svg
+      className="ionicon"
       height="40px"
       width="40px"
       version="1.1"

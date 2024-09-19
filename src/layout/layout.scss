@@ -14,6 +14,10 @@
   .scroll-button:active {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.644);
   }
+  .scroll-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
   &__left-arrow {
     left: 20px;
   }
@@ -26,18 +30,41 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    bottom: 10%;
-    left: 45vw;
-    background-color: #9cd1b29f;
+    bottom: 5%;
+    left: 40vw;
+    background-color: #62dd953b;
     border-radius: 5px;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
-    padding: 12px 8px;
+    padding: 0px 16px 12px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.514);
 
     &__links {
       display: flex;
       align-items: center;
+      margin-right: 16px;
       flex-direction: column;
+      fill: white;
+      color: rgb(5, 65, 5);
+      font-size: 18px;
+      padding-top: 12px;
+      .ionicon {
+        fill: rgb(5, 65, 5);
+      }
     }
+    .active-link {
+      border-top: 2px solid rgb(9, 180, 9);
+      padding-top: 10px;
+      .ionicon {
+        fill: rgb(9, 180, 9);
+      }
+      span {
+        text-transform: capitalize;
+        color: rgb(9, 180, 9);
+      }
+    }
+  }
+  &__nav:active {
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.397);
   }
 }
