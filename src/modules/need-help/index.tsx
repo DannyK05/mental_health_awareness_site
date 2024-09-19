@@ -1,8 +1,8 @@
-import PageLayout from "@/app/components/layout/layout";
+import PageLayout from "@/layout/layout";
 
 export default function NeedHelp() {
   return (
-    <PageLayout>
+    <PageLayout step={3}>
       <h1>Need Help</h1>
     </PageLayout>
   );

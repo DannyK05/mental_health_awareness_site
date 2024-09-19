@@ -1,8 +1,8 @@
-import PageLayout from "@/app/components/layout/layout";
+import PageLayout from "@/layout/layout";
 
 export default function MentalHealthTypes() {
   return (
-    <PageLayout>
+    <PageLayout step={2}>
       <h1>Types</h1>
     </PageLayout>
   );

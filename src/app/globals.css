@@ -1,5 +1,5 @@
 :root {
-  --background: #a6ddbd;
+  --background: #e6dddd;
   --foreground: #171717;
 }
 
@@ -11,11 +11,11 @@
 }
 @font-face {
   font-family: "Already Home";
-  src: url(./fonts/KGAlreadyHome.ttf);
+  src: url(../assets/fonts/KGAlreadyHome.ttf);
 }
 @font-face {
   font-family: "Snowman";
-  src: url(./fonts/PulpenSnowman-Wy8W4.ttf);
+  src: url(../assets/fonts/PulpenSnowman-Wy8W4.ttf);
 }
 html,
 body {

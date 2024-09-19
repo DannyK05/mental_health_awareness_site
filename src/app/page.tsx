@@ -1,9 +1,5 @@
-import PageLayout from "./components/layout/layout";
+import Home from "@/modules/home";
 
-export default function Home() {
-  return (
-    <PageLayout>
-      <h1>World Mental Health Day</h1>
-    </PageLayout>
-  );
+export default function Page() {
+  return <Home />;
 }
