@@ -16,8 +16,7 @@ export default function PageLayout({
   step: number;
 }>) {
   const router = useRouter();
-  const [next, setNext] = useState<number>(0);
-  const [prev, setPrev] = useState<number>(0);
+
   const pageRoutes = [
     "/",
     "/mental-health-facts",
@@ -25,19 +24,8 @@ export default function PageLayout({
     "/need-help",
     "/how-to-help",
   ];
-  useEffect(() => {
-    if (step == 0) {
-      setNext(1);
-      setPrev(0);
-    } else if (step == pageRoutes.length - 1) {
-      setNext(0);
-      setPrev(step - 1);
-    } else {
-      setNext(step + 1);
-      setPrev(step - 1);
-    }
-    console.log(step);
-  });
+  const next = step === pageRoutes.length - 1 ? 0 : step + 1;
+  const prev = step === 0 ? 0 : step - 1;
 
   return (
     <div className="page-layout">
