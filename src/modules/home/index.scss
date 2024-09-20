@@ -1,0 +1,118 @@
+.home-container {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ribbon {
+      filter: drop-shadow(2px 2px 4px #0000008c);
+    }
+    &__text {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-size: 48px;
+      }
+      span {
+        font-size: larger;
+        margin-top: 10px;
+        font-weight: 700;
+      }
+      .bud {
+        position: absolute;
+        top: 1px;
+        right: -5px;
+      }
+    }
+  }
+  .brain-cloud {
+    position: absolute;
+    background-image: url(../../assets/svgs/brain-cloud.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 28px;
+    color: rgb(19, 214, 19);
+    animation: float 60s linear infinite;
+  }
+  .cloud-1 {
+    animation-delay: 3s;
+    top: 5px;
+    left: -220px;
+    padding: 80px;
+  }
+  .cloud-2 {
+    animation-delay: 14s;
+    top: 50px;
+    left: -220px;
+    padding: 50px;
+  }
+  .cloud-3 {
+    animation-delay: 22s;
+    top: 20px;
+    left: -220px;
+  }
+  .cloud-4 {
+    animation-delay: 30s;
+    top: 10px;
+    left: -300px;
+    padding: 100px;
+  }
+  .cloud-5 {
+    animation-delay: 32s;
+    top: 5px;
+    left: -300px;
+  }
+  .cloud-6 {
+    animation-delay: 42s;
+    top: 8px;
+    left: -300px;
+    padding: 60px;
+  }
+  .cloud-7 {
+    animation-delay: 49s;
+    top: 10px;
+    left: -300px;
+    padding: 50px;
+  }
+  &__grass {
+    position: absolute;
+    bottom: 0px;
+    left: -50px;
+    padding: 100px 800px;
+    background-image: url(../../assets/images//grass.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .flower1 {
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+    left: 0;
+  }
+  .flower2 {
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+    right: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    left: -120px;
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    left: 100vw;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+}
