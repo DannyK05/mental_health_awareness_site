@@ -1,7 +1,6 @@
 "use client";
 import ArrowIcon from "@/assets/svgs/ArrowIcon";
 import "./layout.scss";
-import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import HomeIcon from "@/assets/svgs/HomeIcon";
 import TypesIcon from "@/assets/svgs/TypesIcon";

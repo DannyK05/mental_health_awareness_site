@@ -3,7 +3,6 @@ import PageLayout from "@/layout/layout";
 import Ribbon from "@/assets/images/ribbon.avif";
 import Flower1 from "@/assets/svgs/flowers-1.svg";
 import Flower2 from "@/assets/svgs/flowers-2.svg";
-import Leaf from "@/assets/svgs/leaf.svg";
 import Bud from "@/assets/svgs/sunflower-head.svg";
 import "./index.scss";
 
