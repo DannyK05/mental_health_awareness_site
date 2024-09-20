@@ -19,7 +19,13 @@ export default function Home() {
         <div className="brain-cloud cloud-6"></div>
         <div className="brain-cloud cloud-7"></div>
         <div className="home-container__content">
-          <Image className="ribbon" src={Ribbon} alt="Mental Health Ribbon" />
+          <Image
+            className="ribbon"
+            src={Ribbon}
+            width={553}
+            height={360}
+            alt="Mental Health Ribbon"
+          />
           <div className="home-container__content__text">
             <h1>World Mental Health Day</h1>
             <span>October 10</span>

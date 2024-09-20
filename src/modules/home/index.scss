@@ -115,4 +115,35 @@
 }
 
 @media (max-width: 480px) {
+  .home-container {
+    &__content {
+      .ribbon {
+        width: 100%;
+      }
+      &__text {
+        h1 {
+          font-size: larger;
+        }
+        .bud {
+          right: 31px;
+        }
+      }
+    }
+    &__grass {
+      left: 0;
+      bottom: 0;
+      padding: 40px 50vw 0;
+    }
+    .flower1 {
+      width: 20%;
+      bottom: 0;
+    }
+    .flower2 {
+      width: 20%;
+      bottom: 0;
+    }
+    .brain-cloud {
+      display: none;
+    }
+  }
 }

@@ -68,3 +68,28 @@
     box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.397);
   }
 }
+
+@media (max-width: 480px) {
+  .page-layout {
+    &__nav {
+      left: 20vw;
+      &__links {
+        margin-right: 0px;
+        span {
+          display: none;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        svg {
+          width: 50%;
+        }
+      }
+    }
+    .scroll-button {
+      top: 45%;
+    }
+  }
+}
