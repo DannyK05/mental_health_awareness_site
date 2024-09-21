@@ -48,7 +48,7 @@ export default function MentalHealthFacts() {
         <h1>Facts</h1>
         <div className="facts-container__sticky-notes">
           {facts.map(({ no, message, image, alt }) => (
-            <StickyNote no={no}>
+            <StickyNote key={no} no={no}>
               <p>{message}</p>
               <Image src={image} width={340} height={180} alt={alt} />
             </StickyNote>
