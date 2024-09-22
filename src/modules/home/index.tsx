@@ -4,7 +4,7 @@ import Ribbon from "@/assets/images/ribbon.avif";
 import Flower1 from "@/assets/svgs/flowers-1.svg";
 import Flower2 from "@/assets/svgs/flowers-2.svg";
 import Bud from "@/assets/svgs/sunflower-head.svg";
-import Sunflower from "@/assets/images/sunflower.png";
+import Sunflower from "@/assets/images/sunflower.avif";
 import "./index.scss";
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
             className="ribbon"
             src={Ribbon}
             width={553}
-            height={360}
+            height={300}
             alt="Mental Health Ribbon"
           />
           <div className="home-container__content__text">
@@ -40,8 +40,20 @@ export default function Home() {
             <Image className="bud" src={Bud} alt="Flower Bud" />
           </div>
         </div>
-        <Image className="flower1" src={Flower1} alt="Flower 1" />
-        <Image className="flower2" src={Flower2} alt="Flower 2" />
+        <Image
+          className="flower1"
+          src={Flower1}
+          width={200}
+          height={80}
+          alt="Flower 1"
+        />
+        <Image
+          className="flower2"
+          src={Flower2}
+          width={200}
+          height={100}
+          alt="Flower 2"
+        />
         <div className="home-container__grass"></div>
       </div>
     </PageLayout>

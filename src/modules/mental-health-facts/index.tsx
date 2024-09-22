@@ -3,10 +3,10 @@ import "./index.scss";
 import StickyNote from "./components/StickyNote";
 import Image, { StaticImageData } from "next/image";
 import Teens from "@/assets/images/teens-outside.jpg";
-import Dandelions from "@/assets/images/woman-blowing-flower.jpg";
+import Dandelions from "@/assets/images/woman-blowing-flower.avif";
 import Conflicts from "@/assets/images/refugee-camp.avif";
 import Depressed from "@/assets/images/depressed-man.jpeg";
-import Sunflower from "@/assets/images/sunflower.png";
+import Sunflower from "@/assets/images/sunflower.avif";
 export default function MentalHealthFacts() {
   type TFacts = {
     no: number;
@@ -51,7 +51,7 @@ export default function MentalHealthFacts() {
           {facts.map(({ no, message, image, alt }) => (
             <StickyNote key={no} header={no}>
               <p>{message}</p>
-              <Image src={image} width={340} height={180} alt={alt} />
+              <Image src={image} width={300} height={180} alt={alt} />
             </StickyNote>
           ))}
         </div>
