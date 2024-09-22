@@ -4,6 +4,7 @@ import Ribbon from "@/assets/images/ribbon.avif";
 import Flower1 from "@/assets/svgs/flowers-1.svg";
 import Flower2 from "@/assets/svgs/flowers-2.svg";
 import Bud from "@/assets/svgs/sunflower-head.svg";
+import Sunflower from "@/assets/images/sunflower.png";
 import "./index.scss";
 
 export default function Home() {
@@ -17,6 +18,13 @@ export default function Home() {
         <div className="brain-cloud cloud-5"></div>
         <div className="brain-cloud cloud-6"></div>
         <div className="brain-cloud cloud-7"></div>
+        <Image
+          className="sunflower-sun"
+          src={Sunflower}
+          alt="Sunflower"
+          width={200}
+          height={200}
+        />
         <div className="home-container__content">
           <Image
             className="ribbon"

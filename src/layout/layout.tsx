@@ -7,6 +7,7 @@ import TypesIcon from "@/assets/svgs/TypesIcon";
 import HelpIcon from "@/assets/svgs/HelpIcon";
 import HowToHelpIcon from "@/assets/svgs/HowToHelpIcon";
 import Link from "next/link";
+import DialogIcon from "@/assets/svgs/DialogIcon";
 export default function PageLayout({
   children,
   step,
@@ -63,7 +64,7 @@ export default function PageLayout({
           } page-layout__nav__links`}
         >
           <Link href="/mental-health-facts">
-            <TypesIcon />
+            <DialogIcon />
           </Link>
           <span>facts</span>
         </div>
