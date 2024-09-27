@@ -1,0 +1,77 @@
+h1 {
+  text-align: center;
+}
+.types-container {
+  &__content:first-child {
+    height: 95vh;
+  }
+  &__content {
+    height: 100vh;
+    background-image: url("../../assets/images/dark-nature-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .glass-card {
+      position: relative;
+      background-color: #62dd953b;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      color: white;
+      width: 80%;
+      border-radius: 5px;
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      padding: 8px 12px;
+      box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.514);
+      h1 {
+        margin-bottom: 8px;
+        font-size: large;
+      }
+      p {
+        font-size: large;
+      }
+      .bud {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        bottom: -10px;
+        right: 0;
+      }
+    }
+    .red {
+      background-color: #e24b4b4d;
+      h1 {
+        color: #e24b4b;
+      }
+    }
+    .pink {
+      background-color: #ee5da357;
+      h1 {
+        color: #ee5da3;
+      }
+    }
+    .yellow {
+      background-color: #ffda444d;
+      h1 {
+        color: #ffda44;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .types-container {
+    &__content {
+      .glass-card {
+        flex-direction: column;
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

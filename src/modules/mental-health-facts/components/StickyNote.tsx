@@ -1,5 +1,4 @@
-import Bud from "@/assets/svgs/sunflower-head.svg";
-import Image from "next/image";
+import SunFlower from "@/assets/svgs/Sunflower";
 export default function StickyNote({
   children,
   header,
@@ -8,7 +7,10 @@ export default function StickyNote({
     <div className="sticky-note">
       <div className="sticky-note__content">
         <div className="sticky-note__header">
-          <Image src={Bud} alt="Sunflower-bud" width={20} height={20} />
+          <span className="sunflower">
+            <SunFlower />
+          </span>
+
           <h1>#{header}</h1>
         </div>
         <div className="sticky-note__text">{children}</div>

@@ -56,7 +56,7 @@ export default function MentalHealthFacts() {
           ))}
         </div>
         <div className="facts-container__others">
-          <StickyNote header={"⚠ Causes"}>
+          <StickyNote header={"What are the Causes ?"}>
             <ul>
               <li>Adverse Childhood experience such as trauma</li>
               <li>Biological factors or chemical Imbalances in the brain</li>
@@ -69,23 +69,18 @@ export default function MentalHealthFacts() {
               </li>
             </ul>
           </StickyNote>
-          <StickyNote header={"Demographics"}>
-            <ul>
-              <li>
-                23% of Black or Black British people will experience a common
-                mental health problem in any given week.
-              </li>
-              <li>
-                Over a quarter (26%) of young women aged between 16-24 years old
-                report having a common mental health problem in any given week
-              </li>
-              <li>
-                Around 40% of people in England who have overlapping problems
-                including homelessness, substance misuse and contact with the
-                criminal justice system in any given year also have a mental
-                health problem.
-              </li>
-            </ul>
+          <StickyNote header={"Who are at risk ?"}>
+            <p>
+              At any one time, a diverse set of individual, family, community,
+              and structural factors may combine to protect or undermine mental
+              health. Although most people are resilient, people who are exposed
+              to adverse circumstances - including poverty, violence,
+              disability, and inequality - are at higher risk. Protective and
+              risk factors include individual psychological and biological
+              factors, such as emotional skills as well as genetics. Many of the
+              risk and protective factors are influenced through changes in
+              brain structure and/or function.
+            </p>
           </StickyNote>
           <Image src={Sunflower} width={300} height={250} alt="Sunflower" />
         </div>

@@ -3,9 +3,9 @@ import PageLayout from "@/layout/layout";
 import Ribbon from "@/assets/images/ribbon.avif";
 import Flower1 from "@/assets/svgs/flowers-1.svg";
 import Flower2 from "@/assets/svgs/flowers-2.svg";
-import Bud from "@/assets/svgs/sunflower-head.svg";
 import Sunflower from "@/assets/images/sunflower.avif";
 import "./index.scss";
+import SunFlower from "@/assets/svgs/Sunflower";
 
 export default function Home() {
   return (
@@ -37,7 +37,9 @@ export default function Home() {
             <h1>World Mental Health Day</h1>
             <span>October 10</span>
             <span>A remainder to take control of your mental health🌻</span>
-            <Image className="bud" src={Bud} alt="Flower Bud" />
+            <span className="bud">
+              <SunFlower />
+            </span>
           </div>
         </div>
         <Image

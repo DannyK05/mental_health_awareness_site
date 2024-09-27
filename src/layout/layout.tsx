@@ -8,6 +8,13 @@ import HelpIcon from "@/assets/svgs/HelpIcon";
 import HowToHelpIcon from "@/assets/svgs/HowToHelpIcon";
 import Link from "next/link";
 import DialogIcon from "@/assets/svgs/DialogIcon";
+const pageRoutes = [
+  "/",
+  "/mental-health-facts",
+  "/mental-health-types",
+  "/need-help",
+  "/how-to-help",
+];
 export default function PageLayout({
   children,
   step,
@@ -17,13 +24,6 @@ export default function PageLayout({
 }>) {
   const router = useRouter();
 
-  const pageRoutes = [
-    "/",
-    "/mental-health-facts",
-    "/mental-health-types",
-    "/need-help",
-    "/how-to-help",
-  ];
   const next = step === pageRoutes.length - 1 ? 0 : step + 1;
   const prev = step === 0 ? 0 : step - 1;
 

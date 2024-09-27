@@ -11,7 +11,9 @@
   cursor: pointer;
   &__header {
     width: 100%;
-    img {
+    .sunflower {
+      width: 20px;
+      height: 20px;
       position: absolute;
       top: -8px;
       left: 45%;
@@ -67,7 +69,10 @@
       width: 30%;
       h1 {
         margin-bottom: 20px;
-        font-size: 32px;
+        font-size: 28px;
+      }
+      p {
+        height: fit-content;
       }
       li {
         list-style-position: inside;
