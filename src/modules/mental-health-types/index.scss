@@ -1,10 +1,10 @@
-h1 {
-  text-align: center;
+.mental-types__title {
+  height: 100vh;
+  h1 {
+    text-align: center;
+  }
 }
 .types-container {
-  &__content:first-child {
-    height: 95vh;
-  }
   &__content {
     height: 100vh;
     background-image: url("../../assets/images/dark-nature-bg.jpg");

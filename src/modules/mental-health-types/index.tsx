@@ -51,7 +51,9 @@ const mentalIllness: TMentalIllness = [
 export default function MentalHealthTypes() {
   return (
     <PageLayout step={2}>
-      <h1>Types</h1>
+      <div className="mental-types__title">
+        <h1>Types</h1>
+      </div>
       <div className="types-container">
         {mentalIllness.map(({ id, name, content, image }) => (
           <div className="types-container__content" key={id}>
