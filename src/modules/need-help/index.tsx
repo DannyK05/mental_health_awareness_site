@@ -5,6 +5,8 @@ import { hotlines } from "@/data/hotlines";
 import Image from "next/image";
 import Test from "../../assets/images/refugee-camp.avif";
 import { useState } from "react";
+import Boulder from "../../assets/images/boulder.png";
+import Stone from "../../assets/images/stone.png";
 export default function NeedHelp() {
   const [selectedCountry, setSelectedCountry] = useState<string>(
     hotlines[0].country
@@ -22,8 +24,23 @@ export default function NeedHelp() {
   return (
     <PageLayout step={3}>
       <div className="mental-help">
+        <h1>Need Help ?</h1>
         <div className="mental-help__title">
-          <h1>Need Help</h1>
+          <p>
+            Do you sometimes feel down or drained? Overwhelmed by pressure and
+            feel your mental health slowly slipping away, buried under the
+            weight of stress and expectations? You're not alone. Life's
+            challenges can take a toll on us, whether it's from academic
+            demands, work pressures, personal relationships, or even trying to
+            balance it all. These moments of emotional and mental exhaustion can
+            leave us feeling helpless, making it difficult to focus, find joy,
+            or even take care of ourselves. When stress begins to mount, it's
+            important to remember that mental health is just as vital as
+            physical health.
+          </p>
+          <span>
+            Here are a few do's and don'ts to maintain a good mental wellbeing
+          </span>
         </div>
         <div className="mental-help__tips">
           <div className="mental-help__tips--negative span-two-col">
@@ -110,18 +127,23 @@ export default function NeedHelp() {
             <Image src={Test} alt="" width={300} height={300} />
           </div>
           <div className="mental-help__tips--hotline span-full-col">
-            <select
-              title="country"
-              onChange={handleCountryChange}
-              value={selectedCountry}
-            >
-              {hotlines.map(({ country }) => (
-                <option key={country} value={country}>
-                  {country}
-                </option>
-              ))}
-            </select>
-            <div>{countryHotline}</div>
+            <div className="select">
+              <Image src={Stone} alt="stone" />
+              <select
+                title="country"
+                onChange={handleCountryChange}
+                value={selectedCountry}
+              >
+                {hotlines.map(({ country }) => (
+                  <option key={country} value={country}>
+                    {country}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="hotline">
+              <Image src={Boulder} alt="boulder" /> <p>{countryHotline}</p>
+            </div>
           </div>
         </div>
       </div>

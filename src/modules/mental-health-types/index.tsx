@@ -52,7 +52,18 @@ export default function MentalHealthTypes() {
   return (
     <PageLayout step={2}>
       <div className="mental-types__title">
-        <h1>Types</h1>
+        <p>
+          Mental health encompasses our emotional, psychological, and social
+          well-being. It influencses how we think, feel, and behave in our daily
+          lives. Mental health is not merely the absence of mental illness but a
+          state of overall wellness. It plays a crucial role in determining how
+          we handle stress, relate to others, and make decisions. Just like
+          physical health, mental health is important at every stage of life,
+          from childhood to adulthood. However, many people struggle to maintain
+          positive mental health due to various challenges they face in their
+          lives.
+        </p>
+        <span>Here are a few you should know</span>
       </div>
       <div className="types-container">
         {mentalIllness.map(({ id, name, content, image }) => (
