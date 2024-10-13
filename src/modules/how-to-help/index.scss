@@ -1,0 +1,27 @@
+.support__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  &-text {
+    width: 40%;
+    font-size: large;
+    font-weight: 700;
+    margin-right: 60px;
+  }
+}
+.card__container {
+  display: flex;
+  align-items: center;
+  .sticky-note {
+    margin-right: 8px;
+    width: 33%;
+    height: auto;
+    li {
+      list-style-position: inside;
+    }
+  }
+  .sticky-note:hover {
+    transform: initial;
+  }
+}

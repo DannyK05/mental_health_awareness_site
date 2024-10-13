@@ -1,6 +1,6 @@
 import PageLayout from "@/layout/layout";
 import "./index.scss";
-import StickyNote from "./components/StickyNote";
+import StickyNote from "../../components/StickyNote";
 import Image, { StaticImageData } from "next/image";
 import Teens from "@/assets/images/teens-outside.jpg";
 import Dandelions from "@/assets/images/woman-blowing-flower.avif";
