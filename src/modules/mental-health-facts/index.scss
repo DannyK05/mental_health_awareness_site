@@ -50,6 +50,7 @@
   padding: 16px;
   &__title {
     text-align: center;
+    margin-bottom: 20px;
   }
   &__sticky-notes {
     display: flex;
@@ -66,7 +67,7 @@
       filter: drop-shadow(2px 2px 4px rgba(19, 18, 18, 0.774));
     }
     .sticky-note {
-      width: 30%;
+      width: 32%;
       h1 {
         margin-bottom: 20px;
         font-size: 28px;
